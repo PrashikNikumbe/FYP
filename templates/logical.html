@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+    <title>CareerSaga</title>
+  </head>
+<body>
+
+    <h1 class="text-center my-3">Logical Test </h1>
+
+
+    <div class="container shadow p-3 mb-3 bg-body rounded fs-5 text-danger" id="instruction">
+        IMPORTANT !!!!<br><br>
+        1) Please give the test without any malpractise. <br>
+        2) Test will start in fullscreen mode.<br>
+        3) For end the test you need to submit the test<br>
+        4) After submitting the test, score will be displayed. <br>
+        5) Copy paste is blocked.<br>
+        6) The test consist of 20 logical questions <br>
+        7) Negative marking is 0.4 <br>
+        8) Time alloted is 30min , after time is over form will be auto submit. <br>
+        <br>
+        <span class="text-success"> Best of Luck</span>
+    </div>
+    <p class="my-0 text-center" id="Leave" ><button type="button" class="btn btn-primary" onclick="location.href='index.html'" >Back</button></p>
+
+
+    <p class="text-center" id="Start"><button type="button" class="btn btn-primary" onclick="start()" >Start Test</button></p>
+
+
+    <div class="container" id = "timer"><span id = "time">30</span> Minutes Remaining</div>
+
+    <form action="" id="apti">
+        <hr>
+
+        <div id="questions" class="container shadow p-3 mb-3 bg-body rounded fs-5 text-dark ">
+
+        </div>
+        <p class="text-center"><button type="button" class="btn btn-primary" onclick="generateScore()" id="Submit">Submit</button></p>
+
+    </form>
+        <!-- Comment 
+
+        <button type="button" id="Submit" onclick="generateScore()">Submit</button>
+    </form>
+
+-->
+    <div id = "Scorecard">Your score is <span id="score">0</span><br>
+        <span id="message"></span>
+        <br>
+        <p>
+            Logical Questions Analysis
+        </p>
+        <canvas style="position: relative;left: 190px; " id="Chart" width="400" height="400"> </canvas>
+    </div>
+
+    <script src="../static/js/logicalQ.js" ></script>
+
+    <script src="../static/js/logical.js" ></script>
+    <script src="../static/js/index.js" ></script>
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    <script src="https://kit.fontawesome.com/f466345e12.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

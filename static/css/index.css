@@ -1,0 +1,75 @@
+*{
+
+    user-select: none;
+}
+
+
+#leave{
+    text-align: center;
+}
+
+
+
+
+#apti{
+    display: none;
+}
+
+#timer{
+    width: 900px;
+
+    display: none;
+    color: #f44336;
+    font-weight: bold;
+    font-size: 45px;
+    padding-top: 25px;
+    text-align: center;
+    background-color: rgba(0,0,0, 0.7);
+    margin: 0 auto;
+    border:2px solid white;
+    border-radius: 10px;
+    position: sticky;
+    top: 0;
+    
+}
+#time{
+    font-size: inherit;
+    color: #f44336;
+}
+
+#Scorecard{
+    color: greenyellow;
+    font-weight: bold;
+    font-size: 45px;
+    padding-top: 25px;
+    text-align: center;
+    background-color: rgba(0,0,0, 0.8);
+    height: 125px;
+    width: 750px;
+    margin: 0 auto;
+    border:2px solid white;
+    border-radius: 10px;
+    display: none;
+}
+#score{
+    color: greenyellow;
+
+    font-size: inherit;
+}
+
+
+
+
+
+
+#message{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #607d8b;
+
+}
+
+#instruction{
+    width: 900px;
+}

@@ -1,0 +1,25 @@
+Q6) No of self projects done
+Q7) How good are you in core technical subjects?
+Q8) How good are you in aptitude solving?
+Q9) How good are you in problem solving?
+Q10) How good are you in programming language? 
+Q11) How good are you in abstract thinking?
+Q12) How good are you in design thinking?
+Q13) When you used the computer first time?
+1)I haven't used computer till now.
+2)During Engineering college.
+3)During Junior college.
+4)During High school.
+5)During Primary school.
+Q14) How well do you understand the problem statement?
+Q15) How well do you perform in lab?
+Q16) How good are you in DSA?
+Q17) In how many domain have you done project?
+Q18) How many competition you have attended?
+Q19) How many competition you have won?
+Q20) How many extracurricular activities you have attended?
+Q21) How good was your learning capabilities?
+Q22) How good was your college teaching?
+Q23) How many college teachers know you?
+Q24) How well do you perform in college exam?
+Q25) How good are you in communication?

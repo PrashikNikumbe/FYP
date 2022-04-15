@@ -1,0 +1,27 @@
+Q1) What is your Gender?
+Q2) What is your Age?
+Q3) I Have a rich vocabulary.
+Q4) I Have a vivid imagination.
+Q5) I Have excellent ideas.
+Q6) I Am quick to understand things.
+Q7) I Spend time reflecting on things.
+Q8) I Am relaxed most of the time.
+Q9) I Seldom feel blue.
+Q10) I Change my mood a lot.
+Q11) I Get upset easily.
+Q12) I Am easily disturbed.
+Q13) I Am always prepared.
+Q14) I Pay attention to details.
+Q15) I Get chores done right away.
+Q16) I Like order.
+Q17) I Follow a schedule.
+Q18) I Am interested in people.
+Q19) I Sympathize with others' feelings.
+Q20) I Have a soft heart.
+Q21) I Take time out for others.
+Q22) I Make people feel at ease.
+Q23) I Am the life of the party.
+Q24) I Feel comfortable around people.
+Q25) I Start conversations.
+Q26) I Talk to a lot of different people at parties.
+Q27) I Don't mind being the center of attention.

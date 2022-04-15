@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>CareerSaga</title>
+</head>
+
+<body>
+
+    <style>
+        #Scorecard {
+            color: greenyellow;
+            font-weight: bold;
+            font-size: 45px;
+            padding-top: 25px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.8);
+            height: 125px;
+            width: 1000px;
+            margin: 0 auto;
+            border: 2px solid white;
+            border-radius: 10px;
+            display: block;
+        }
+
+        #score {
+            color: greenyellow;
+
+            font-size: inherit;
+        }
+
+        #message {
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+            color: #607d8b;
+
+        }
+
+        #instruction {
+            width: 900px;
+        }
+    </style>
+
+    <h1 class="text-center my-3">Career Prediction Test</h1>
+
+
+    <div class="container shadow p-3 mb-3 bg-body rounded fs-5 text-danger" id="instruction">
+        IMPORTANT !!!!<br><br>
+        1) Please give the test honestly for better prediction. <br>
+        2) The test consist of 25 Academic question. <br>
+        3) All questions are compulsary. <br>
+        4) Test results will generate after submitting the test. <br>
+        <br>
+        <span class="text-success"> Best of Luck</span>
+    </div>
+
+    <div>
+        <hr>
+
+
+        {% if check %}
+
+        <form action="careertest.html" method="post">
+
+            <div id="questions" class="container shadow p-3 mb-3 bg-body rounded fs-5 text-dark ">
+                <!--Input type-->
+                <label>Q1) What is your SSC percentage:</label>
+                <input type="text" name="1" value="" placeholder="Type here" required>
+                <!--Input type Ends-->
+
+
+                <!--Input type-->
+                <br><br>
+                <label>Q2) What is your HSC percentage:</label>
+                <input type="text" name="2" value="" placeholder="Type here" required>
+                <!--Input type Ends-->
+
+
+                <!--Input type-->
+                <br><br>
+                <label>Q3) What is your Engineering CGPA:</label>
+                <input type="text" name="3" value="" placeholder="Type here" required>
+                <!--Input type Ends-->
+
+
+                <!--Radio Type-->
+                <br><br>
+                <label for="">Q4) What is your college type?</label><br>
+
+                <input type="radio" name="4" value="1">
+                <label>Tier 1</label><br>
+
+                <input type="radio" name="4" value="2">
+                <label>Tier 2</label><br>
+
+                <input type="radio" name="4" value="3">
+                <label>Tier 3</label><br>
+
+                <input type="radio" name="4" value="4">
+                <label>Tier 4</label><br>
+
+                <input type="radio" name="4" value="5">
+                <label>Tier 5</label>
+                <!--Radio Type Ends-->
+
+
+                <!--Range Type-->
+                <br><br>
+                <label for="customRange1" class="form-label">Q5) No of Academics projects done.</label>
+                <input type="range" class="form-range" min="1" max="5" name="5" required>
+                <p>
+                    1------------------------------------2------------------------------------3------------------------------------4------------------------------------5
+                </p>
+                <!--Range Type Ends-->
+                <!--Range Type-->
+                <br><br>
+                <label for="customRange1" class="form-label">Q6) No of self projects done.</label>
+                <input type="range" class="form-range" min="1" max="5" name="6" required>
+                <p>
+                    1------------------------------------2------------------------------------3------------------------------------4------------------------------------5
+                </p>
+                <!--Range Type Ends-->
+                <!--Range Type-->
+                <br><br>
+                <label for="customRange1" class="form-label">Q7) How good are you in core technical subjects?</label>
+                <input type="range" class="form-range" min="1" max="5" name="7" required>
+                <p>
+                    1------------------------------------2------------------------------------3------------------------------------4------------------------------------5
+                </p>
+                <!--Range Type Ends-->
+                <!--Range Type-->
+                <br><br>
+                <label for="customRange1" class="form-label">Q8) How good are you in aptitude solving?</label>
+                <input type="range" class="form-range" min="1" max="5" name="8" required>
+                <p>
+                    1------------------------------------2------------------------------------3------------------------------------4------------------------------------5
+                </p>
+                <!--Range Type Ends-->
+                <!--Range Type-->
+                <br><br>
+                <label for="customRange1" class="form-label">Q9) How good are you in problem solving?</label>
+                <input type="range" class="form-range" min="1" max="5" name="9" required>
+                <p>
+                    1------------------------------------2------------------------------------3------------------------------------4------------------------------------5
+                </p>
+                <!--Range Type Ends-->
+                <!--Range Type-->
+                <br><br>
+                <label for="customRange1" class="form-label">Q10) How good are you in programming language? </label>
+                <input type="range" class="form-range" min="1" max="5" name="10" required>
+                <p>
+                    1------------------------------------2------------------------------------3------------------------------------4------------------------------------5
+                </p>
+                <!--Range Type Ends-->
+                <!--Range Type-->
+                <br><br>
+                <label for="customRange1" class="form-label">Q11) How good are you in abstract thinking?</label>
+                <input type="range" class="form-range" min="1" max="5" name="11" required>
+                <p>
+                    1------------------------------------2------------------------------------3------------------------------------4------------------------------------5
+                </p>
+                <!--Range Type Ends-->
+                <!--Range Type-->
+                <br><br>
+                <label for="customRange1" class="form-label">Q12) How good are you in design thinking?</label>
+                <input type="range" class="form-range" min="1" max="5" name="12" required>
+                <p>
+                    1------------------------------------2------------------------------------3------------------------------------4------------------------------------5
+                </p>
+                <!--Range Type Ends-->
+                <!--Radio Type-->
+                <br><br>
+                <label for="">Q13) When you used the computer first time?</label><br>
+
+                <input type="radio" name="13" value="1">
+                <label>1) I haven't used computer till now.</label><br>
+
+                <input type="radio" name="13" value="2">
+                <label>2) During Engineering college.</label><br>
+
+                <input type="radio" name="13" value="3">
+                <label>3) During Junior college.</label><br>
+
+                <input type="radio" name="13" value="4">
+                <label>4) During High school.</label><br>
+
+                <input type="radio" name="13" value="5">
+                <label>5) During Primary school.</label><br>
+                <!--Radio Type Ends-->
+
+                <!--Range Type-->
+                <br><br>
+                <label for="customRange1" class="form-label">Q14) How well do you understand the problem
+                    statement?</label>
+                <input type="range" class="form-range" min="1" max="5" name="14" required>
+                <p>
+                    1------------------------------------2------------------------------------3------------------------------------4------------------------------------5
+                </p>
+                <!--Range Type Ends-->
+                <!--Range Type-->
+                <br><br>
+                <label for="customRange1" class="form-label">Q15) How well do you perform in lab?</label>
+                <input type="range" class="form-range" min="1" max="5" name="15" required>
+                <p>
+                    1------------------------------------2------------------------------------3------------------------------------4------------------------------------5
+                </p>
+                <!--Range Type Ends-->
+                <!--Range Type-->
+                <br><br>
+                <label for="customRange1" class="form-label">Q16) How good are you in DSA?</label>
+                <input type="range" class="form-range" min="1" max="5" name="16" required>
+                <p>
+                    1------------------------------------2------------------------------------3------------------------------------4------------------------------------5
+                </p>
+                <!--Range Type Ends-->
+                <!--Range Type-->
+                <br><br>
+                <label for="customRange1" class="form-label">Q17) In how many domain have you done project?</label>
+                <input type="range" class="form-range" min="1" max="5" name="17" required>
+                <p>
+                    1------------------------------------2------------------------------------3------------------------------------4------------------------------------5
+                </p>
+                <!--Range Type Ends-->
+                <!--Range Type-->
+                <br><br>
+                <label for="customRange1" class="form-label">Q18) How many competition you have attended?</label>
+                <input type="range" class="form-range" min="1" max="5" name="18" required>
+                <p>
+                    1------------------------------------2------------------------------------3------------------------------------4------------------------------------5
+                </p>
+                <!--Range Type Ends-->
+                <!--Range Type-->
+                <br><br>
+                <label for="customRange1" class="form-label">Q19) How many competition you have won?</label>
+                <input type="range" class="form-range" min="1" max="5" name="19" required>
+                <p>
+                    1------------------------------------2------------------------------------3------------------------------------4------------------------------------5
+                </p>
+                <!--Range Type Ends-->
+                <!--Range Type-->
+                <br><br>
+                <label for="customRange1" class="form-label">Q20) How many extracurricular activities you have
+                    attended?</label>
+                <input type="range" class="form-range" min="1" max="5" name="20" required>
+                <p>
+                    1------------------------------------2------------------------------------3------------------------------------4------------------------------------5
+                </p>
+                <!--Range Type Ends-->
+                <!--Range Type-->
+                <br><br>
+                <label for="customRange1" class="form-label">Q21) How good was your learning capabilities?</label>
+                <input type="range" class="form-range" min="1" max="5" name="21" required>
+                <p>
+                    1------------------------------------2------------------------------------3------------------------------------4------------------------------------5
+                </p>
+                <!--Range Type Ends-->
+                <!--Range Type-->
+                <br><br>
+                <label for="customRange1" class="form-label">Q22) How good was your college teaching?</label>
+                <input type="range" class="form-range" min="1" max="5" name="22" required>
+                <p>
+                    1------------------------------------2------------------------------------3------------------------------------4------------------------------------5
+                </p>
+                <!--Range Type Ends-->
+                <!--Range Type-->
+                <br><br>
+                <label for="customRange1" class="form-label">Q23) How many college teachers know you?</label>
+                <input type="range" class="form-range" min="1" max="5" name="23" required>
+                <p>
+                    1------------------------------------2------------------------------------3------------------------------------4------------------------------------5
+                </p>
+                <!--Range Type Ends-->
+                <!--Range Type-->
+                <br><br>
+                <label for="customRange1" class="form-label">Q24) How well do you perform in college exam?</label>
+                <input type="range" class="form-range" min="1" max="5" name="24" required>
+                <p>
+                    1------------------------------------2------------------------------------3------------------------------------4------------------------------------5
+                </p>
+                <!--Range Type Ends-->
+                <!--Range Type-->
+                <br><br>
+                <label for="customRange1" class="form-label">Q25) How good are you in communication?</label>
+                <input type="range" class="form-range" min="1" max="5" name="25" required>
+                <p>
+                    1------------------------------------2------------------------------------3------------------------------------4------------------------------------5
+                </p>
+                <!--Range Type Ends-->
+
+            </div>
+            <p class="text-center"><button type="submit" class="btn btn-primary" id="Submit">Submit</button></p>
+        </form>
+        {% else %}
+        <p class="text-center"><a href="applicant.html"><button class="btn btn-success">Home</button></a></p>
+        <div id="Scorecard" >Career Predicted is <span id="score">{{careerpredict}}</span><br>
+            <span id="message"></span>
+        </div>
+        {% endif %}
+
+    </div>
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="../static/css/style3.css" />
+
+        <title>CareerSaga</title>
+      </head>
+  <body>
+    <div class="container">
+      
+      <div class="forms-container">
+
+        <div class="signin-signup">
+          {% if check1 %}
+          <br>
+          <div class="alert alert-danger alert-dismissible fade show text-center" role="alert" >
+            Sorry Username is already taken.please enter unique one
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div> 
+          {% elif check2 %}
+          <br>
+          <div class="alert alert-danger alert-dismissible fade show text-center" role="alert" >
+            Please enter valid Username or Password            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>    
+          {% endif %}
+          <form action="reclogin.html" method="post" class="sign-in-form">
+                        <h1>CareerSaga</h1>
+
+            <h2 class="title">Sign in</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" required placeholder="Username" name="Username"/>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" required placeholder="Password" name="Password" />
+            </div>
+            <input type="submit" value="Login" class="btn solid">
+            <a href="applogin.html">Are you a applicant?</a>
+            
+          </form>
+          <form action="reclogin.html" method="post" class="sign-up-form">
+                        <h1>CareerSaga</h1>
+
+            <h2 class="title">Sign up</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" required  placeholder="Username" name="newUsername" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" required placeholder="Email" name="newEmail" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" required  placeholder="Password" name="newPassword"/>
+            </div>
+            <input type="submit" class="btn" value="Sign up">
+            <a href="applogin.html">Are you a applicant?</a>
+            
+          </form>
+        </div>
+      </div>
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>Recruiter Sign in</h3>
+            <p>
+              New Here? Sign up now.
+            </p>
+            <button class="btn transparent" id="sign-up-btn" >
+              Sign up
+            </button>
+          </div>
+          <img src="img/image1.png" class="image" alt="" />
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>Recruiter Sign up</h3>
+            <p>
+              One of us? Sign in now.
+            </p>
+            <button class="btn transparent" id="sign-in-btn">
+              Sign in
+            </button>
+          </div>
+          <img src="img/image2.png" class="image" alt="" />
+        </div>
+      </div>
+    </div>
+
+ 
+    <script src="../static/js/event.js"></script>
+    <script src="../static/js/event.js"></script>
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
